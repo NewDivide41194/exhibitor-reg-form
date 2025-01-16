@@ -1,0 +1,7 @@
+{
+    "/api": {
+      "target": "https://staging-fha-2024.occamlab.com.sg/api/",
+      "secure": true,
+      "changeOrigin": true
+    }
+  }

@@ -1,2 +1,18 @@
-<p>event-selection works!</p>
-<h3>{{companyList()}}</h3>
+<p-card header="Event Selection">
+    <div class="flex flex-col w-100 gap-4 text-gray">
+        <div *ngFor="let type of eventType" class="field-checkbox my-4">
+            <p-radiobutton name="pizza" [value]="type" [inputId]="type.id.toString()" [(ngModel)]="selectedCategory"  />
+            <label [for]="type.id" class="ms-2">{{type.name}}</label>
+        </div>
+    </div>
+    <span>
+        Company
+    </span>
+    <p>
+        If you are unable to find your company name, please approach our Exhibitor Team for assistance.
+    </p>
+    <p-select 
+    [options]="companyList()" 
+    [(ngModel)]="selectedCategory" 
+    optionLabel="company" placeholder="Please Select" class="w-100 md:w-56" />
+</p-card>

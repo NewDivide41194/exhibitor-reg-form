@@ -1,2 +1,15 @@
-<p>home works!</p>
-<app-event-selection [message]="homeMessage()"/>
+<p [style]="{fontSize: '2em'}" class="m-4 primary-text">Onsite Exhibitors Registration</p>
+<div class="m-4">
+    <app-event-selection [message]="homeMessage()" />
+</div>
+<hr />
+<div class="m-4">
+    <app-registration-form />
+</div>
+<div class="text-center primary-text">
+    <i class="bi bi-plus-circle pe-2">
+    </i>
+    Add Exhibitor
+</div>
+<hr />
+<app-my-buttom/>

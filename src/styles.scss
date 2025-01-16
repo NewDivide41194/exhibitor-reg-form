@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color: #EE4036;
+$gray-color: #6E6B7B;
+$white-color: #ffffff;
+
+.primary-text {
+    color: $primary-color
+}
+
+.primary-bg  {
+    background-color: $primary-color
+}
+
+.text-gray {
+    color: $gray-color
+}
